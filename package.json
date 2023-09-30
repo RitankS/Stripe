@@ -1,16 +1,20 @@
 {
   "name": "stripe-sub-test",
+  "homepage": "http://RitankS.github.io/Stripe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^1.9.0",
     "@stripe/stripe-js": "^1.32.0",
+    "gh-pages": "^6.0.0",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
